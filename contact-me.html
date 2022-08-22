@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+    <h1>My Contact Details</h1>
+    <p>My Fictional Address</p>
+    <p>3982271689</p>
+    <p>myemail@gmail.com</p>
+    <hr>
+
+    <!--l'attributo action, con valore "mailto" servirà ad aggiungere al form la funzione di trasmissione dei dati. La mail che specifichiamo tra virgolette (es: info@gmail.com) sarà la mail che RICEVERA' le informazioni inserite dall'utente. Quando faremo click su Submit il browser aprirà la nostra App di Posta elettronica (es. Gmail se siamo su Chrome).
+    - L'attributo enctype, con valore text/plain significa che il testo che inseriremo nel form è un normale testo (simile a <meta charset="UTF-8"> che inseriamo nell'head), INOLTRE aggiungendo questo attributo, nel momento in cui andremo a cliccare Submit e ci si aprirà Gmail, non avremo caratteri strani all'interno del corpo della mail.
+    - L'attributo method-->
+    <form action="mailto:info@gmail.com" enctype="text/plain" method=""> 
+        <label for="">You Name:</label>
+        <input type="text" name="yourName" value=""><br>
+        <label for="">You Email:</label>
+        <input type="email" name="yourEmail" value=""><br>
+        <label for="">You Message:</label><br>
+        <textarea name="yourMessage" id="" cols="30" rows="10"></textarea><br>
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
